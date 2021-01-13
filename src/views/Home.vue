@@ -15,7 +15,7 @@
         </div>
       </div>
       <div class="homeBtns">
-        <div v-for="game in games" class="gameBtn" :key="game.id" @click="changeGame(game)" :style="{backgroundColor: game.color}"></div>
+        <div v-for="game in games" class="gameBtn" :key="game.id" @click="changeGame(game);" :style="{backgroundColor: game.color}"></div>
       </div>
     </div>
   </section>
@@ -33,6 +33,8 @@ export default {
 
   data() {
     return {
+      isActive: false,
+
       games: [
         {title: 'Animal Crossing: New Horizons', para: 'New to Animal Crossing: New Horizons? Come get the lay of the land and learn what to expect when you set out to create your own island paradise. If you’re an island life veteran already, we hope you will share this video with newcomers and welcome them with open arms!', id: 1, color: '#5F96D2', image: 'acnh', bckColour: 'linear-gradient(114deg, rgb(236, 236, 236) 50%, rgba(90,171,255,1) 50%)'},
 
@@ -42,15 +44,31 @@ export default {
 
         {title: 'Luigis Mansion 3', para: 'Luigi’s invited to the towering Last Resort hotel, but when Mario and friends go missing, our green-clad hero will have to conquer his fears to save them! Slam, blow away, and vacuum up ghosts with the all-new Poltergust G-00, and join forces with Gooigi to overcome the puzzling contraptions and mischievous boss on each themed floor. And that’s just the Last Resort. Enter the ScareScraper for 8-player local wireless or online co-op gameplay.', id: 4, color: '#0B9309', image: 'lm3', bckColour: 'linear-gradient(114deg, rgb(236, 236, 236) 50%, rgba(11, 147, 9,1) 50%)'}
       ],
+
       currentGame: {}
     }
   },
 
   methods: {
     changeGame(info) {
-      this.currentGame = info;
+      let background = document.querySelector("#app");
 
-      document.querySelector("#app").style.backgroundImage = this.currentGame.bckColour
+      if (document.querySelector(".currentGame").classList.contains("testAnim")) {
+        return
+      } else {
+        setTimeout(() => {
+        this.currentGame = info;
+
+        background.style.backgroundImage = this.currentGame.bckColour;
+        background.classList.remove("nintendoRed");
+      }, 780);
+
+      document.querySelector(".currentGame").classList.add("testAnim");
+
+      setTimeout(() => {
+        document.querySelector(".currentGame").classList.remove("testAnim");
+      }, 1600)
+      }
     }
   }
 }
@@ -67,6 +85,18 @@ export default {
     width: 85%;
     margin: 10% auto 0;
     height: 470px;
+    position: relative;
+  }
+
+  .testAnim {
+    clip-path: inset( -7.5vw -200vw -200vw -100vw );
+    animation: textAnim 1.6s ease;
+  }
+
+  @keyframes textAnim {
+    0% {transform: translateY(0); opacity: 1;}
+    50% {transform: translateY(-20%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
   }
 
   .currentGameText {
@@ -78,6 +108,7 @@ export default {
     text-transform: uppercase;
     font-size: 66px;
     font-weight: bold;
+    font-family: 'Heebo';
   }
 
   .currentGameText p {
@@ -85,6 +116,7 @@ export default {
     margin: 5% 0 8%;
     font-size: 15px;
     line-height: 24px;
+    font-family: 'Heebo';
   }
 
   .currentGameText button {

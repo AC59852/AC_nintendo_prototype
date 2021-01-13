@@ -1,10 +1,10 @@
 <template>
   <nav id="topNav">
       <ul>
-          <li><router-link to="/">Home</router-link></li>
-          <li><router-link to="/games">Games</router-link></li>
-          <li><router-link to="/hardware">Hardware</router-link></li>
-          <li><router-link to="/news">News &#38; Events</router-link></li>
+          <li><router-link v-on:click.native="changeBck()" to="/">Home</router-link></li>
+          <li><router-link v-on:click.native="changeBck()" to="/games">Games</router-link></li>
+          <li><router-link v-on:click.native="changeBck()" to="/hardware">Hardware</router-link></li>
+          <li><router-link v-on:click.native="changeBck()" to="/news">News &#38; Events</router-link></li>
       </ul>
     <input type="search" name="search" id="search">
   </nav>
@@ -12,11 +12,20 @@
 
 <script>
 export default {
+    methods: {
+        changeBck() {
+            document.querySelector("#app").classList.add("nintendoRed");
+        }
+    }
 
 }
 </script>
 
 <style>
+    .nintendoRed {
+        background: linear-gradient(114deg, rgb(236, 236, 236) 50%, rgb(228, 0, 15) 50%) !important;
+    }
+
     #topNav {
         display: flex;
         width: 60%;
