@@ -1,6 +1,6 @@
 <template>
   <div>
-      <img :src="'./images/' + game.image + '.png'" :alt="'image for ' + game.name">
+      <img :src="'./images/' + game.image" :alt="'image for ' + game.name">
       <h2>{{ game.name }}</h2>
       <span>${{ game.price }}</span>
   </div>

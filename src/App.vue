@@ -65,17 +65,17 @@ table {
 	border-spacing: 0;
 }
 
+.page {
+  position: fixed;
+  
+  width: inherit;
+}
+
 #app {
   width: 100%;
   min-height: 100vh;
   height: 100vh;
   background: rgb(255,255,255);
-  background: linear-gradient(114deg, rgb(236, 236, 236) 50%, rgba(90,171,255,1) 50%);
-}
-
-.page {
-  position: fixed;
-  width: inherit;
 }
 
 .container {
