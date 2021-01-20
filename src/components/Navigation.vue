@@ -1,12 +1,12 @@
 <template>
   <nav id="topNav">
       <ul>
-          <li><router-link v-on:click.native="changeBck()" to="/">Home</router-link></li>
-          <li><router-link v-on:click.native="changeBck()" to="/games">Games</router-link></li>
-          <li><router-link v-on:click.native="changeBck()" to="/hardware">Hardware</router-link></li>
-          <li><router-link v-on:click.native="changeBck()" to="/news">News &#38; Events</router-link></li>
+          <li><router-link v-on:click.native="changeBck()" :to="{name: 'Home'}">Home</router-link></li>
+          <li><router-link v-on:click.native="changeBck()" :to="{name: 'Games'}">Games</router-link></li>
+          <li><router-link v-on:click.native="changeBck()" :to="{name: 'Hardware'}">Hardware</router-link></li>
+          <li><router-link v-on:click.native="changeBck()" :to="{name: 'News'}">News &#38; Events</router-link></li>
       </ul>
-    <input type="search" name="search" id="search">
+    <input type="search" name="search" id="search" placeholder="Search">
   </nav>
 </template>
 
@@ -71,13 +71,18 @@ export default {
     #topNav #search {
         border-radius: 100vw;
         border: 2px gray solid;
-        box-shadow: inset 0px 0px 12px rgba(0, 0, 0, 0.25);
+        box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
         padding: 8px 8px 8px 8px;
         width: 20%;
         margin-top: -4px;
+        position: relative;
     }
 
-    
+    #topNav #search::placeholder {
+        font-family: 'Heebo';
+        font-size: 0.9rem;
+        position: relative;
+    }
 
 #topNav ul li a.router-link-exact-active::after {
     top: 125% !important;

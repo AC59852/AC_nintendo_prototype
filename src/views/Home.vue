@@ -17,7 +17,7 @@
       <div class="homeBtns">
         <h2>More Games:</h2>
         <div class="homeBtnWrapper">
-          <div v-for="game in games" class="gameBtn" :key="game.id" @click="changeGame(game);"></div>
+          <button v-for="game in games" class="gameBtn" :key="game.id" @click="changeGame(game);"></button>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@ export default {
       isActive: false,
 
       games: [
-        {title: 'Animal Crossing: New Horizons', para: 'New to Animal Crossing: New Horizons? Come get the lay of the land and learn what to expect when you set out to create your own island paradise. If you’re an island life veteran already, we hope you will share this video with newcomers and welcome them with open arms!', id: 1, color: '#FFC819', image: 'acnh', bckColour: 'linear-gradient(114deg, rgb(236, 236, 236) 50%, rgba(255, 200, 25,1) 50%)'},
+        {title: 'Animal Crossing: New Horizons', para: 'Escape to a deserted island and create your own paradise as you explore, create, and customize in the Animal Crossing: New Horizons game. Your island getaway has a wealth of natural resources that can be used to craft everything from tools to creature comforts.', id: 1, color: '#FFC819', image: 'acnh', bckColour: 'linear-gradient(114deg, rgb(236, 236, 236) 50%, rgba(255, 200, 25,1) 50%)'},
 
         {title: 'Super Mario Odyssey', para: 'Explore incredible places far from the Mushroom Kingdom as you join Mario and his new ally Cappy on a massive, globe-trotting 3D adventure. Use amazing new abilities—like the power to capture and control objects, animals, and enemies—to collect Power Moons so you can power up the Odyssey airship and save Princess Peach from Bowser’s wedding plans!', id: 2, color: '#D25F5F', image: 'smo', bckColour: 'linear-gradient(114deg, rgb(236, 236, 236) 50%, rgba(210, 96, 96,1) 50%)'},
 
@@ -159,7 +159,8 @@ export default {
 
   .currentGameImg4 {
     align-items: flex-end;
-    margin-top: 46%;
+    margin-top: 35%;
+    position: relative;
   }
 
   .currentGameImg img {
@@ -174,8 +175,9 @@ export default {
   }
 
   .currentGameImg4 img {
-    margin-left: 10%;
     width: 100%;
+    position: absolute;
+    left: 12%;
   }
 
   .homeButtonCon {
@@ -211,13 +213,18 @@ export default {
     cursor: pointer;
     background-color: rgba(128, 128, 128, 0.315);
     transition: background-color 0.3s ease;
+    border: none;
+  }
+
+  .gameBtn:focus {
+    outline: 0;
   }
 
 
   /* Wish there was a better way through JS, but dymanic changing doesnt work */
   
-  .gameBtn:nth-child(1):hover {background-color:#FFC819 !important;}
-  .gameBtn:nth-child(2):hover {background-color:#D25F5F !important;}
-  .gameBtn:nth-child(3):hover {background-color:#5F96D2 !important;}
-  .gameBtn:nth-child(4):hover {background-color:#0B9309 !important;}
+  .gameBtn:nth-child(1):hover, .gameBtn:nth-child(1):focus {background-color:#FFC819 !important;}
+  .gameBtn:nth-child(2):hover, .gameBtn:nth-child(2):focus {background-color:#D25F5F !important;}
+  .gameBtn:nth-child(3):hover, .gameBtn:nth-child(3):focus {background-color:#5F96D2 !important;}
+  .gameBtn:nth-child(4):hover, .gameBtn:nth-child(4):focus {background-color:#0B9309 !important;}
 </style>

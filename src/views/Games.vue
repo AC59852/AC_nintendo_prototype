@@ -36,12 +36,12 @@ export default {
   data() {
     return {
       filters: [
-        {id: 1, name: 'Shop Games', icon: 'gameboy'},
-        {id: 2, name: 'Deals', icon: 'tag'},
-        {id: 3, name: 'Release Date', icon: 'download'},
-        {id: 4, name: 'Nintendo Online', icon: 'web'},
-        {id: 5, name: 'FAQ', icon: 'help'},
-        {id: 6, name: 'Support', icon: 'support'},
+        {id: 1, name: 'Shop Games', icon: 'gameboy.svg'},
+        {id: 2, name: 'Deals', icon: 'tag.svg'},
+        {id: 3, name: 'Release Date', icon: 'download.svg'},
+        {id: 4, name: 'Nintendo Online', icon: 'web.svg'},
+        {id: 5, name: 'FAQ', icon: 'help.svg'},
+        {id: 6, name: 'Support', icon: 'support.svg'},
       ],
 
       games: [
@@ -106,6 +106,11 @@ export default {
     height: 220px;
     object-fit: cover;
     box-shadow: 4px 5px 16px 0 rgba(0, 0, 0, 0.342);
+    transition: transform 0.2s ease;
+  }
+
+  .game img:hover {
+    transform: scale(1.05);
   }
 
   .game h2, .game span {
@@ -168,6 +173,7 @@ export default {
     object-fit: cover;
     border-radius: 30px;
     box-shadow: 10px 9px 25px 0px rgba(0, 0, 0, 0.315);
+    transition: transform 0.2s ease;
   }
 
   .recentsWrapper div h2, .recentsWrapper div span {
@@ -176,6 +182,10 @@ export default {
     font-weight: bold;
     text-align: center;
     display: block;
+  }
+
+  .recentsWrapper div img:hover {
+    transform: scale(1.05);
   }
 
   .recentGames div h2 {
