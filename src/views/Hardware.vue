@@ -154,7 +154,7 @@ export default {
     font-family: 'Heebo';
     font-size: 40px;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-bottom: 5%;
 }
 
@@ -189,12 +189,11 @@ export default {
     margin-top: 4%;
 }
 
+
+/* Not happy with this, but since its just a mockup this will do */
 .addonsCon div:nth-child(1) img { width: 129px; object-fit: contain; }
-
 .addonsCon div:nth-child(2) img { width: 225px; object-fit: contain; }
-
 .addonsCon div:nth-child(3) img { width: 180px; object-fit: contain; }
-
 .addonsCon div:nth-child(4) img { width: 129px; height: 160px; }
 
 </style>
