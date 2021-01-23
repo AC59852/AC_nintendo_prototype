@@ -1,0 +1,57 @@
+#news {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#news h1 {
+    font-size: 34px;
+    font-family: 'Heebo';
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 4.5% 0 2% 9.5%;
+}
+
+.newsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.newsContainer div {
+    width: 223px;
+    height: 234px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.newsContainer div img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    object-position: 0 15%;
+    height: 140px;
+    box-shadow: 4px 5px 16px 0 rgba(0, 0, 0, 0.342);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.newsContainer div img:hover {
+transform: scale(1.05);
+}
+
+.newsContainer div h2, .newsContainer div h3 {
+    margin: 6% 0 0;
+    font-family: 'Heebo';
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: capitalize;
+    line-height: 16px;
+}
+
+.newsContainer div h3 {
+    color: #737373;
+    font-size: 14px;
+    margin-top: 3%;
+}
