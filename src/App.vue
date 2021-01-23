@@ -65,32 +65,6 @@ table {
 	border-spacing: 0;
 }
 
-.page {
-  position: fixed;
-  
-  width: inherit;
-}
-
-#app {
-  width: 100%;
-  min-height: 100vh;
-  height: 100vh;
-  background: rgb(255,255,255);
-}
-
-.container {
-  background-color: white;
-  width: 92%;
-  height: 900px;
-  border-radius: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 10px 10px 22px 6px rgba(0,0,0,0.363);
-  overflow: hidden;
-}
-
 .router-anim-leave-active {
   animation: testLeave 0.6s ease;
   animation-fill-mode: forwards;

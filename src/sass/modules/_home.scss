@@ -1,0 +1,152 @@
+.container {
+    background-color: white;
+    width: 92%;
+    height: 700px;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 10px 22px 6px rgba(0,0,0,0.363);
+    overflow: hidden;
+  }
+
+  .currentGame {
+    display: flex;
+    width: 85%;
+    margin: 8% auto 0;
+    height: 419px;
+    position: relative;
+  }
+
+  .testAnim {
+    clip-path: inset( -7.5vw -200vw -200vw -100vw );
+    animation: textAnim 1.6s ease;
+  }
+
+  @keyframes textAnim {
+    0% {transform: translateY(0); opacity: 1;}
+    50% {transform: translateY(-20%); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+  }
+
+  .currentGameText {
+    width: 50%;
+    margin-right: 0%;
+    height: 313px;
+  }
+
+  .currentGameText h1 {
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Heebo';
+  }
+
+  .currentGameText p {
+    width: 82%;
+    margin: 5% 0 8%;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: 'Heebo';
+  }
+
+  .currentGameText button {
+    width: 24%;
+    margin-right: 5%;
+    background-color: transparent;
+    border: none;
+    padding: 2.5% 0 2.5%;
+    font-size: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+  }
+
+  .currentGameText button:nth-child(1) {
+    color: white;
+    box-shadow: 0 0 10px 2px rgba(75, 75, 75, 0.493);
+  }
+
+  .currentGameImg {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .currentGameImg2, .currentGameImg3{
+    align-items: flex-end;
+    margin-top: 48%;
+  }
+
+  .currentGameImg4 {
+    align-items: flex-start;
+    margin-top: 0;
+    position: relative;
+  }
+
+  .currentGameImg img {
+    width: 125%;
+    margin-top: -5%;
+    display: flex;
+  }
+
+  .currentGameImg3 img {
+    width: 100%;
+    margin-left: 15%;
+  }
+
+  .currentGameImg4 img {
+    width: 100%;
+    position: absolute;
+    left: 12%;
+  }
+
+  .homeButtonCon {
+    margin-top: 0;
+  }
+
+  .homeBtns {
+    width: 50%;
+    margin-top: -1%;
+    margin-left: 7%;
+  }
+
+  .homeBtns h2 {
+    margin-bottom: 2%;
+    font-family: 'Heebo';
+    font-weight: bold;
+  }
+
+  .homeBtnWrapper {
+    display: flex;
+  }
+
+  .gameBtn:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .gameBtn  {
+    border-radius: 1000vw;
+    width: 35px;
+    margin: 0 11px;
+    height: 35px;
+    max-width: 150px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.315);
+    transition: background-color 0.3s ease;
+    border: none;
+  }
+
+  .gameBtn:focus {
+    outline: 0;
+  }
+
+
+  /* Wish there was a better way through JS, but dymanic changing doesnt work */
+  
+  .gameBtn:nth-child(1):hover, .gameBtn:nth-child(1):focus {background-color:#FFC819 !important;}
+  .gameBtn:nth-child(2):hover, .gameBtn:nth-child(2):focus {background-color:#D25F5F !important;}
+  .gameBtn:nth-child(3):hover, .gameBtn:nth-child(3):focus {background-color:#5F96D2 !important;}
+  .gameBtn:nth-child(4):hover, .gameBtn:nth-child(4):focus {background-color:#0B9309 !important;}

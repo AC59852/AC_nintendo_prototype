@@ -1,0 +1,18 @@
+@import './modules/_nav.scss';
+@import './modules/_home.scss';
+@import './modules/_games.scss';
+@import './modules/_hardware.scss';
+@import './modules/_news.scss';
+@import './modules/_queries.scss';
+
+.page {
+    position: fixed;
+    width: inherit;
+  }
+
+  #app {
+    width: 100%;
+    min-height: 100vh;
+    height: 100vh;
+    background: rgb(255,255,255);
+  }

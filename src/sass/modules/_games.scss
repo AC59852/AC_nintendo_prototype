@@ -1,0 +1,161 @@
+.games {
+    margin: 2% 0 0 2%;
+  }
+
+  .games h1 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 3% 0 2% 4%;
+    font-family: 'Heebo';
+  }
+
+  .gamesContainer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+
+  .gamesWrapper {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: -2.5%;
+  }
+
+  .game {
+    width: 44%;
+    margin-bottom: 4%;
+    text-align: center;
+  }
+
+  .game img {
+    width: 100%;
+    border-radius: 24px;
+    height: 155px;
+    object-fit: cover;
+    box-shadow: 4px 5px 16px 0 rgba(0, 0, 0, 0.342);
+    transition: transform 0.2s ease;
+  }
+
+  .game img:hover {
+    transform: scale(1.05);
+  }
+
+  .game h2, .game span {
+    font-family: 'Heebo';
+    font-size: 14px;
+  }
+
+  .game h2 {
+    margin: 6% 0 3%;
+    font-weight: bold;
+  }
+
+  .game span {
+    font-weight: bold;
+  }
+
+  .filters {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+  }
+
+  .recentGames {
+    margin-bottom: 4%;
+  }
+
+  .recentsTitle {
+    font-size: 32px;
+    font-family: 'Heebo';
+    font-weight: bold;
+    margin-top: -11.5%;
+    margin-left: 2%;
+    margin-bottom: 5%;
+    position: relative;
+    text-transform: uppercase;
+  }
+
+  .recentsTitle::after {
+    position: absolute;
+    content: '';
+    background-image: url('../images/arrow.svg');
+    width: 6%;
+    top: -15%;
+    left: 85%;
+    background-repeat: no-repeat;
+    height: 115%;
+  }
+
+  .recentsWrapper {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .recentsWrapper div {
+    width: 200px;
+  }
+
+  .recentsWrapper div img {
+    width: 93%;
+    height: 95px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 10px 9px 25px 0px rgba(0, 0, 0, 0.315);
+    transition: transform 0.2s ease;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .recentsWrapper div h2, .recentsWrapper div span {
+    font-size: 14px;
+    font-family: 'Heebo';
+    font-weight: bold;
+    text-align: center;
+    display: block;
+  }
+
+  .recentsWrapper div img:hover {
+    transform: scale(1.05);
+  }
+
+  .recentGames div h2 {
+    margin: 16px 0 8px;
+  }
+
+  .filterWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-left: 0;
+    align-content: flex-start;
+  }
+
+  .filter {
+    width: 135px;
+    height: 118px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.342);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4%;
+  }
+
+  .filter img {
+    width: 37%;
+    display: flex;
+    margin-bottom: 10%;
+  }
+
+  .filter h2 {
+    font-weight: bold;
+    font-family: 'Heebo';
+    font-size: 15px;
+  }

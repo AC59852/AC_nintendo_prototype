@@ -1,0 +1,347 @@
+
+@media screen and (min-width: 1440px) {
+    .container {
+        height: 830px;
+    }
+
+    .currentGame {
+        margin: 12% auto 0;
+    }
+
+    .homeBtns {
+        margin-top: 5%;
+    }
+
+    .filter {
+        width: 160px;
+        height: 135px;
+    }
+
+    #hardware {
+        margin-top: 3%;
+    }
+
+    #news h1 {
+        margin-top: 7%;
+    }
+
+    .newsContainer div {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 1544px) {
+    .newsContainer div {
+        width: 290px;
+    }
+
+    .newsContainer div img {
+        height: 150px;
+    }
+}
+
+
+@media screen and (min-width: 1680px) {
+    // Container
+    .container {
+        height: 900px;
+        border-radius: 50px;
+      }
+
+
+    // Start of Nav  
+      #topNav {
+        width: 60%;
+        margin: 70px 0 0 5%;
+    }
+    
+    #topNav ul { width: 60%; }
+    
+    #topNav ul li { margin: 3px 6% 0; }
+    // End of Nav
+
+
+    // Start of Home
+    .currentGame {
+        display: flex;
+        width: 85%;
+        margin: 8% auto 0;
+        height: 470px;
+        position: relative;
+      }
+    
+      .currentGameText h1 {
+        font-size: 66px;
+      }
+    
+      .currentGameText p {
+        width: 80%;
+        font-size: 15px;
+        line-height: 24px;
+      }
+    
+      .currentGameText button {
+        width: 18%;
+        padding: 2% 0 2%;
+        font-size: 15px;
+        border-radius: 8px;
+      }
+    
+      .currentGameImg2, .currentGameImg3{
+        margin-top: 45%;
+      }
+    
+      .currentGameImg4 {
+        align-items: flex-end;
+        margin-top: 35%;
+      }
+    
+      .currentGameImg3 img {
+        width: 100%;
+        margin-left: 15%;
+      }
+    
+      .homeBtns {
+        margin-top: 3%;
+      }
+    // End of Home
+
+
+    // Start of Games
+    .games {
+        width: 100% !important;
+        margin: 0 auto 0;
+      }
+    
+      .games h1 {
+        font-size: 40px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin: 3% 0 2% 6.5%;
+        font-family: 'Heebo';
+      }
+    
+      .gamesContainer {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        margin-left: 0;
+      }
+    
+      .gamesWrapper {
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-left: -2.5%;
+      }
+    
+      .game {
+        width: 42%;
+        margin-bottom: 4%;
+        text-align: center;
+      }
+    
+      .game img {
+        width: 100%;
+        border-radius: 28px;
+        height: 220px;
+        object-fit: cover;
+        box-shadow: 4px 5px 16px 0 rgba(0, 0, 0, 0.342);
+        transition: transform 0.2s ease;
+      }
+    
+      .game img:hover {
+        transform: scale(1.05);
+      }
+    
+      .game h2, .game span {
+        font-family: 'Heebo';
+        font-size: 16px;
+      }
+    
+      .game h2 {
+        margin: 6% 0 3%;
+        font-weight: bold;
+      }
+    
+      .game span {
+        font-weight: bold;
+      }
+    
+      .filters {
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+      }
+    
+      .recentGames {
+        margin-bottom: 4%;
+      }
+    
+      .recentsTitle {
+        font-size: 40px;
+        font-family: 'Heebo';
+        font-weight: bold;
+        margin-top: -10.5%;
+        margin-left: 4%;
+        margin-bottom: 5%;
+        position: relative;
+        text-transform: uppercase;
+      }
+    
+      .recentsTitle::after {
+        position: absolute;
+        content: '';
+        background-image: url('../images/arrow.svg');
+        width: 4%;
+        left: 73%;
+        background-repeat: no-repeat;
+        height: 90%;
+        top: 0;
+      }
+    
+      .recentsWrapper {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    
+      .recentsWrapper div {
+        width: 200px;
+      }
+    
+      .recentsWrapper div img {
+        width: 100%;
+        height: 125px;
+        object-fit: cover;
+        border-radius: 30px;
+        box-shadow: 10px 9px 25px 0px rgba(0, 0, 0, 0.315);
+        transition: transform 0.2s ease;
+      }
+    
+      .recentsWrapper div h2, .recentsWrapper div span {
+        font-size: 16px;
+        font-family: 'Heebo';
+        font-weight: bold;
+        text-align: center;
+        display: block;
+      }
+    
+      .recentsWrapper div img:hover {
+        transform: scale(1.05);
+      }
+    
+      .recentGames div h2 {
+        margin: 20px 0 10px;
+      }
+    
+      .filterWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-left: 0;
+        align-content: flex-start;
+      }
+    
+      .filter {
+        width: 195px;
+        height: 168px;
+        box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.342);
+        border-radius: 37px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4%;
+      }
+    
+      .filter img {
+        width: 40%;
+        display: flex;
+        margin-bottom: 10%;
+      }
+    
+      .filter h2 {
+        font-weight: bold;
+        font-family: 'Heebo';
+        font-size: 18px;
+      }
+    // End of Games
+
+
+
+    // Start of Hardware    
+    .switchText h1 {
+        font-size: 40px;
+    }
+    
+    .switchText h1::after {
+        left: 372px;
+        font-size: 24px;
+    }
+    
+    .switchText p {
+        font-size: 18px;
+    }
+    
+    .switchText a {
+        font-size: 16px;
+    }
+    
+    .switchWrapper img {
+        width: 762px;
+    }
+    
+    .switchBtnCon button {
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+    }
+    
+    .addonsWrapper h2 {
+        font-size: 40px;
+    }
+    
+    .addonsCon div {
+        width: 277px;
+        height: 248px;
+        border-radius: 37px;
+    }
+    
+    .addonsCon div img {
+        width: 200px;
+    }
+    
+    /* Not happy with this, but since its just a mockup this will do */
+    .addonsCon div:nth-child(1) img { width: 129px; }
+    .addonsCon div:nth-child(2) img { width: 225px; }
+    .addonsCon div:nth-child(3) img { width: 180px; }
+    .addonsCon div:nth-child(4) img { width: 129px; height: 147px;}
+    // End of Hardware
+
+
+
+    // Start of News
+    #news h1 {
+        font-size: 40px;
+    }
+    
+    .newsContainer div {
+        width: 320px;
+        height: 285px;
+        margin-bottom: 2%;
+    }
+    
+    .newsContainer div img {
+        border-radius: 28px;
+        height: 210px;
+    }
+    
+    .newsContainer div h2, .newsContainer div h3 {
+        font-size: 18px;
+        line-height: normal;
+    }
+    
+    // End of News
+}
