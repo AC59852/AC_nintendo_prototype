@@ -1,5 +1,10 @@
 <template>
   <div id="app">
+    <div class="mobile">
+        <h2>We're Sorry</h2>
+        <p>This site was made exclusively for desktop. Because of this, both mobile and tablet do not have a design made. Very sorry.</p>
+        <p>If you would like to view this website, please load it on your PC, or on a screen larger than 1280px, thank you.</p>
+      </div>
     <div class="container">
       <Navigation />
       <transition name="router-anim">

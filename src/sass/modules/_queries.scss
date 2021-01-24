@@ -1,5 +1,21 @@
 
+@media screen and (min-width: 720px) {
+  .mobile h2 {
+    font-size: 32px;
+  }
+
+  .mobile p {
+    margin-bottom: 3%;
+    width: 50%;
+    line-height: 22px;
+  }
+}
+
 @media screen and (min-width: 1440px) {
+  .mobile {
+    display: none;
+    z-index: 0;
+  }
     .container {
         height: 830px;
     }
@@ -93,7 +109,7 @@
     
       .currentGameImg4 {
         align-items: flex-end;
-        margin-top: 35%;
+        margin-top: 37%;
       }
     
       .currentGameImg3 img {
@@ -271,7 +287,10 @@
 
 
 
-    // Start of Hardware    
+    // Start of Hardware  
+    #hardware {
+      margin-top: 0;
+    }  
     .switchText h1 {
         font-size: 40px;
     }
@@ -325,6 +344,7 @@
     // Start of News
     #news h1 {
         font-size: 40px;
+        margin-top: 4.5%;
     }
     
     .newsContainer div {

@@ -11,7 +11,7 @@
           </div>
         </div>
         <div :class="'currentGameImg currentGameImg' + currentGame.id">
-          <img :src="'./images/' + currentGame.image + '.png'" :alt="'Picture for the game ' + currentGame.title" :class="'gameImg' + currentGame.id">
+          <img :src="'./images/' + currentGame.image + '.webp'" :alt="'Picture for the game ' + currentGame.title" :class="'gameImg' + currentGame.id">
         </div>
       </div>
       <div class="homeBtns">
@@ -70,13 +70,13 @@ export default {
 
         background.style.backgroundImage = this.currentGame.bckColour;
         background.classList.remove("nintendoRed");
-      }, 780);
+      }, 850);
 
       document.querySelector(".currentGame").classList.add("testAnim");
 
       setTimeout(() => {
         document.querySelector(".currentGame").classList.remove("testAnim");
-      }, 1600)
+      }, 1800)
       }
     },
   }
