@@ -21,13 +21,14 @@
 
   .testAnim {
     clip-path: inset( -7.5vw -200vw -200vw -100vw );
-    animation: textAnim 1.6s ease;
+    animation: textAnim 2.4s ease;
   }
 
   @keyframes textAnim {
     0% {transform: translateY(0); opacity: 1;}
+    30% {transform: translateY(-20%); opacity: 0;}
     50% {transform: translateY(-20%); opacity: 0;}
-    100% {transform: translateY(0); opacity: 1;}
+    90% {transform: translateY(0); opacity: 1;}
   }
 
   .currentGameText {
@@ -150,3 +151,28 @@
   .gameBtn:nth-child(2):hover, .gameBtn:nth-child(2):focus {background-color:#D25F5F !important;}
   .gameBtn:nth-child(3):hover, .gameBtn:nth-child(3):focus {background-color:#5F96D2 !important;}
   .gameBtn:nth-child(4):hover, .gameBtn:nth-child(4):focus {background-color:#0B9309 !important;}
+
+  .mobile {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    z-index: 99999;
+    font-family: 'Heebo';
+  }
+
+  .mobile h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    margin: 4% 0 6%;
+  }
+
+  .mobile p {
+    width: 65%;
+    margin: 0 auto 6%;
+    font-size: 18px;
+    line-height: 20px;
+  }
